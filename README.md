@@ -49,12 +49,3 @@ Config.Locale = 'en' -- Default locale
 
 2. **Retrieving the Anchor:**
    - Players can use the anchor item again to retrieve the anchor and get the item back in their inventory.
-
-## Dependencies
-
-- QBCore Framework
-- qb-inventory
-
-## Support
-
-For support, please contact the resource author or refer to the QBCore documentation.
