@@ -8,24 +8,13 @@ This resource allows players to use an anchor item to stop their boat in place i
    - Download the resource and extract it to your `resources` folder.
 
 2. **Add to Server Config:**
-   - Add `ensure GR-Anker` to your `server.cfg` to ensure the resource is started.
+   - Add `ensure GR-Anchor` to your `server.cfg` to ensure the resource is started.
 
 3. **Database:**
    - Add the following entry to your `qb-core/shared/items.lua` file:
 
 ```lua
-["anchor"] = {
-    ["name"] = "anchor",
-    ["label"] = "Boat Anchor",
-    ["weight"] = 1000,
-    ["type"] = "item",
-    ["image"] = "anchor.png",
-    ["unique"] = true,
-    ["useable"] = true,
-    ["shouldClose"] = false,
-    ["combinable"] = nil,
-    ["description"] = "A heavy anchor to stop your boat."
-}
+    anchor                      = {name = "anchor",                 label = "Boat Anchor",              weight = 10000,      type = "item",  image = "anchor.png",               unique = true,      useable = true,     shouldClose = false,    combinable = nil,   description = "A heavy anchor to stop your boat."},
 ```
 
 4. **Images:**
@@ -39,7 +28,6 @@ The configuration file `config.lua` allows you to customize the anchor delay and
 Config = {}
 
 Config.AnchorDelay = 10000 -- Time in milliseconds (10 seconds)
-Config.Locale = 'en' -- Default locale
 ```
 
 ## Usage
